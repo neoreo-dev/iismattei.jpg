@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 08:27:02 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwODoyMToxNyAiOzI0MDI="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwODoyNzowMiAiOzE7MjUxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius, fahrenheit" type="Real" array="False" size=""/>
+            <assign variable="celsius" expression="0"/>
+            <assign variable="fahrenheit" expression="0"/>
+            <output expression="&quot;Inserisci una temperatura in Celsius e la convertir&#242; in Fahrenheit&quot;" newline="True"/>
+            <input variable="celsius"/>
+            <if expression="celsius&gt;35">
+                <then>
+                    <output expression="&quot;Avviso: la temperatura da te inserita &#232; molto alta.&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="fahrenheit" expression="(celsius*1.8)+32"/>
+            <output expression="celsius &amp; &quot;&#176;C convertiti in Fahrenheit sono &quot; &amp; fahrenheit &amp; &quot;&#176;F.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

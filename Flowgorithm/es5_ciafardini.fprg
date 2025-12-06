@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 09:08:42 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwODo1Mjo1MyAiOzI0MDY="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwOTowODo0MiAiOzk7MjUyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="somma, voto, counterInsuff, maggiore, counter" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="voto" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <assign variable="counterInsuff" expression="0"/>
+            <assign variable="maggiore" expression="0"/>
+            <assign variable="media" expression="0"/>
+            <assign variable="counter" expression="0"/>
+            <output expression="&quot;Inserisci un voto&quot;" newline="True"/>
+            <input variable="voto"/>
+            <assign variable="maggiore" expression="voto"/>
+            <do expression="voto!=0">
+                <if expression="voto&lt;0 or voto&gt;10">
+                    <then>
+                        <output expression="&quot;Voto non valido inserito, termino il programma&quot;" newline="True"/>
+                        <assign variable="media" expression="somma/counter"/>
+                        <output expression="&quot;Il voto pi&#249; alto inserito &#232; &quot; &amp; maggiore &amp; &quot;, la media totale &#232; di &quot; &amp; media &amp; &quot;, il numero totale di insufficienze &#232; di &quot; &amp; counterInsuff &amp; &quot;.&quot;" newline="True"/>
+                        <breakpoint/>
+                    </then>
+                    <else>
+                        <assign variable="somma" expression="somma+voto"/>
+                        <assign variable="counter" expression="counter+1"/>
+                        <if expression="voto&gt;maggiore">
+                            <then>
+                                <assign variable="maggiore" expression="voto"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="voto&lt;=5">
+                            <then>
+                                <assign variable="counterInsuff" expression="counterInsuff+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <output expression="&quot;Inserisci un altro voto&quot;" newline="True"/>
+                        <input variable="voto"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;Voto non valido inserito, termino il programma...&quot;" newline="True"/>
+            <assign variable="media" expression="somma/counter"/>
+            <output expression="&quot;Il voto pi&#249; alto inserito &#232; &quot; &amp; maggiore &amp; &quot;, la media totale &#232; di &quot; &amp; media &amp; &quot;, il numero totale di insufficienze &#232; di &quot; &amp; counterInsuff &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

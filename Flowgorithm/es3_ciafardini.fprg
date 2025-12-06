@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 09:12:10 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwODo0Mjo1MCAiOzI0MDI="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwOToxMjoxMCAiOzQ7MjUwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input, tabellina, value" type="Integer" array="False" size=""/>
+            <assign variable="input" expression="0"/>
+            <output expression="&quot;Inserisci un numero per ottenere la sua tabellina&quot;" newline="True"/>
+            <input variable="input"/>
+            <if expression="input=0">
+                <then>
+                    <output expression="&quot;La tabellina dello 0 &#232; composta da soli zeri.&quot;" newline="True"/>
+                    <breakpoint/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Ecco la tabellina del &quot; &amp; input &amp; &quot;:&quot;" newline="True"/>
+            <for variable="tabellina" start="1" end="10" direction="inc" step="1">
+                <assign variable="value" expression="input*tabellina"/>
+                <output expression="value" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 08:52:51 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwODo0OToyNSAiOzI0MTE="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwODo1Mjo1MSAiOzI7MjUxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input, somma" type="Integer" array="False" size=""/>
+            <assign variable="input" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+            <input variable="input"/>
+            <do expression="input&gt;=0">
+                <assign variable="somma" expression="somma+input"/>
+                <output expression="&quot;Inserisci un altro numero&quot;" newline="True"/>
+                <input variable="input"/>
+            </do>
+            <output expression="&quot;Numero negativo rilevato, termino il programma. La somma totale &#232;: &quot; &amp; somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

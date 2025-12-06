@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-15 09:10:45 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwODoyNzowNSAiOzI0MDU="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTE1OyIwOToxMDo0NSAiOzc7MjUxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="spesa, discountAmount, finalPrice" type="Real" array="False" size=""/>
+            <declare name="discountApplied" type="Boolean" array="False" size=""/>
+            <assign variable="spesa" expression="0"/>
+            <assign variable="discountAmount" expression="0"/>
+            <assign variable="finalPrice" expression="0"/>
+            <assign variable="discountApplied" expression="false"/>
+            <output expression="&quot;Inserisci l'importo totale&quot;" newline="True"/>
+            <input variable="spesa"/>
+            <if expression="spesa&gt;150">
+                <then>
+                    <assign variable="discountApplied" expression="true"/>
+                    <assign variable="discountAmount" expression="0.30"/>
+                    <output expression="&quot;Hai uno sconto del &quot; &amp; discountAmount*100 &amp; &quot;%.&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="spesa&gt;100">
+                <then>
+                    <if expression="discountApplied=true">
+                        <then/>
+                        <else>
+                            <assign variable="discountApplied" expression="true"/>
+                            <assign variable="discountAmount" expression="0.20"/>
+                            <output expression="&quot;Hai uno sconto del &quot; &amp; discountAmount*100 &amp; &quot;%.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <if expression="spesa&gt;50">
+                <then>
+                    <if expression="discountApplied=true">
+                        <then/>
+                        <else>
+                            <assign variable="discountApplied" expression="true"/>
+                            <assign variable="discountAmount" expression="0.10"/>
+                            <output expression="&quot;Hai uno sconto del &quot; &amp; discountAmount*100 &amp; &quot;%.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Non hai alcun sconto.&quot;" newline="True"/>
+                </else>
+            </if>
+            <assign variable="finalPrice" expression="spesa-(spesa*discountAmount)"/>
+            <output expression="&quot;Il costo finale &#232; di &quot; &amp; finalPrice &amp; &quot;&#8364;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
