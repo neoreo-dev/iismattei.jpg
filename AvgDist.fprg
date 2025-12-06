@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 10:26:54 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIxMDowMzoyNCAiOzIzODc="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIxMDoyNjo1NCAiOzE7MjUwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, num4, num5, avg, dist1, dist2, dist3, dist4, dist5" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="0"/>
+            <assign variable="num2" expression="0"/>
+            <assign variable="num3" expression="0"/>
+            <assign variable="num4" expression="0"/>
+            <assign variable="num5" expression="0"/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Inserisci il terzo numero&quot;" newline="True"/>
+            <input variable="num3"/>
+            <output expression="&quot;Inserisci il quarto numero&quot;" newline="True"/>
+            <input variable="num4"/>
+            <output expression="&quot;Inserisci il quinto numero&quot;" newline="True"/>
+            <input variable="num5"/>
+            <assign variable="avg" expression="(num1+num2+num3+num4+num5)/5"/>
+            <assign variable="dist1" expression="num1-avg"/>
+            <assign variable="dist2" expression="num2-avg"/>
+            <assign variable="dist3" expression="num3-avg"/>
+            <assign variable="dist4" expression="num4-avg"/>
+            <assign variable="dist5" expression="num5-avg"/>
+            <output expression="&quot;La media &#232; di &quot; &amp; avg &amp; &quot;, la distanza tra il primo numero e la media &#232; di &quot; &amp; dist1 &amp; &quot;, tra il secondo e la media &#232; di &quot; &amp; dist2 &amp; &quot;, tra il terzo e la media &#232; di &quot; &amp; dist3 &amp; &quot;, tra il quarto e la media &#232; di &quot; &amp; dist4 &amp; &quot;, tra il quinto e la media &#232; di &quot; &amp; dist5 &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

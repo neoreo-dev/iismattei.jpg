@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-11 08:42:52 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTExOyIwODoyNjo0NSAiOzI0MDM="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTExOyIwODo0Mjo1MiAiOzE7MjUwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CostoProdotto, Risparmio, NuovoRisparmio" type="Real" array="False" size=""/>
+            <assign variable="CostoProdotto" expression="0"/>
+            <assign variable="Risparmio" expression="0"/>
+            <assign variable="NuovoRisparmio" expression="0"/>
+            <output expression="&quot;Inserisci il tuo obiettivo&quot;" newline="True"/>
+            <input variable="CostoProdotto"/>
+            <output expression="&quot;Ora inserisci il tuo primo risparmio!&quot;" newline="True"/>
+            <input variable="NuovoRisparmio"/>
+            <assign variable="Risparmio" expression="NuovoRisparmio"/>
+            <while expression="Risparmio&lt;CostoProdotto">
+                <output expression="&quot;Il tuo risparmio attuale &#232; di &quot; &amp; Risparmio &amp; &quot;&#8364;. Quando avrai nuovi risparmi, puoi scriverli qui.&quot;" newline="True"/>
+                <input variable="NuovoRisparmio"/>
+                <assign variable="Risparmio" expression="Risparmio+NuovoRisparmio"/>
+            </while>
+            <output expression="&quot;Complimenti! Hai raggiunto il tuo obiettivo ed ora puoi comprare ci&#242; che desideri. Il tuo risparmio finale &#232; di &quot; &amp; Risparmio &amp; &quot;&#8364;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

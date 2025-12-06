@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 11:46:23 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAyOyIxMDozMzo1MSAiOzIzOTE="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAyOyIxMTo0NjoyMyAiOzg7MjUxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, classe" type="Real" array="False" size=""/>
+            <declare name="crediti" type="String" array="False" size=""/>
+            <assign variable="media" expression="0"/>
+            <assign variable="classe" expression="0"/>
+            <assign variable="crediti" expression="&quot;&quot;"/>
+            <output expression="&quot;Inserisci la tua media scolastica&quot;" newline="True"/>
+            <input variable="media"/>
+            <if expression="media&gt;=6">
+                <then>
+                    <output expression="&quot;Inserisci la classe che stai frequentando&quot;" newline="True"/>
+                    <input variable="classe"/>
+                    <if expression="media=6">
+                        <then>
+                            <if expression="classe=3">
+                                <then>
+                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                    <input variable="crediti"/>
+                                    <if expression="crediti=&quot;Si&quot;">
+                                        <then>
+                                            <output expression="&quot;La tua fascia di credito &#232; 8.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="crediti=&quot;No&quot;">
+                                                <then>
+                                                    <output expression="&quot;La tua fascia di credito &#232; 7.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="classe=4">
+                                        <then>
+                                            <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                            <input variable="crediti"/>
+                                            <if expression="crediti=&quot;Si&quot;">
+                                                <then>
+                                                    <output expression="&quot;La tua fascia di credito &#232; 9.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="crediti=&quot;No&quot;">
+                                                        <then>
+                                                            <output expression="&quot;La tua fascia di credito &#232; 8.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Errore&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="classe=5">
+                                                <then>
+                                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                    <input variable="crediti"/>
+                                                    <if expression="crediti=&quot;Si&quot;">
+                                                        <then>
+                                                            <output expression="&quot;La tua fascia di credito &#232; 10.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="crediti=&quot;No&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;La tua fascia di credito &#232; 9.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="media &lt;= 7">
+                                <then>
+                                    <if expression="classe=3">
+                                        <then>
+                                            <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                            <input variable="crediti"/>
+                                            <if expression="crediti=&quot;Si&quot;">
+                                                <then>
+                                                    <output expression="&quot;La tua fascia di credito &#232; 9.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="crediti=&quot;No&quot;">
+                                                        <then>
+                                                            <output expression="&quot;La tua fascia di credito &#232; 8.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Errore&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="classe=4">
+                                                <then>
+                                                    <output expression="&quot;La tua fascia di credito &#232; tra 9 e 10.&quot;" newline="True"/>
+                                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                    <input variable="crediti"/>
+                                                    <if expression="crediti=&quot;Si&quot;">
+                                                        <then>
+                                                            <output expression="&quot;La tua fascia di credito &#232; 10.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="crediti=&quot;No&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;La tua fascia di credito &#232; 9.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="classe=5">
+                                                        <then>
+                                                            <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                            <input variable="crediti"/>
+                                                            <if expression="crediti=&quot;Si&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;La tua fascia di credito &#232; 11.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="crediti=&quot;No&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;La tua fascia di credito &#232; 10.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="media &lt;= 8">
+                                        <then>
+                                            <if expression="classe=3">
+                                                <then>
+                                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                    <input variable="crediti"/>
+                                                    <if expression="crediti=&quot;Si&quot;">
+                                                        <then>
+                                                            <output expression="&quot;La tua fascia di credito &#232; 10.&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="crediti=&quot;No&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;La tua fascia di credito &#232; 9.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="classe=4">
+                                                        <then>
+                                                            <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                            <input variable="crediti"/>
+                                                            <if expression="crediti=&quot;Si&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;La tua fascia di credito &#232; 11.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="crediti=&quot;No&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;La tua fascia di credito &#232; 10.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="classe=5">
+                                                                <then>
+                                                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                                    <input variable="crediti"/>
+                                                                    <if expression="crediti=&quot;Si&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;La tua fascia di credito &#232; 12.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="crediti=&quot;No&quot;">
+                                                                                <then>
+                                                                                    <output expression="&quot;La tua fascia di credito &#232; 11.&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="media &lt;= 9">
+                                                <then>
+                                                    <if expression="classe=3">
+                                                        <then>
+                                                            <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                            <input variable="crediti"/>
+                                                            <if expression="crediti=&quot;Si&quot;">
+                                                                <then>
+                                                                    <output expression="&quot;La tua fascia di credito &#232; 11.&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="crediti=&quot;No&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;La tua fascia di credito &#232; 10.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="classe=4">
+                                                                <then>
+                                                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                                    <input variable="crediti"/>
+                                                                    <if expression="crediti=&quot;Si&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;La tua fascia di credito &#232; 12.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="crediti=&quot;No&quot;">
+                                                                                <then>
+                                                                                    <output expression="&quot;La tua fascia di credito &#232; 11.&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="classe=5">
+                                                                        <then>
+                                                                            <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                                            <input variable="crediti"/>
+                                                                            <if expression="crediti=&quot;Si&quot;">
+                                                                                <then>
+                                                                                    <output expression="&quot;La tua fascia di credito &#232; 14.&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="crediti=&quot;No&quot;">
+                                                                                        <then>
+                                                                                            <output expression="&quot;La tua fascia di credito &#232; 13.&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else/>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="media &lt;= 10">
+                                                        <then>
+                                                            <if expression="classe=3">
+                                                                <then>
+                                                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                                    <input variable="crediti"/>
+                                                                    <if expression="crediti=&quot;Si&quot;">
+                                                                        <then>
+                                                                            <output expression="&quot;La tua fascia di credito &#232; 12.&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="crediti=&quot;No&quot;">
+                                                                                <then>
+                                                                                    <output expression="&quot;La tua fascia di credito &#232; 11.&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="classe=4">
+                                                                        <then>
+                                                                            <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                                            <input variable="crediti"/>
+                                                                            <if expression="crediti=&quot;Si&quot;">
+                                                                                <then>
+                                                                                    <output expression="&quot;La tua fascia di credito &#232; 13.&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="crediti=&quot;No&quot;">
+                                                                                        <then>
+                                                                                            <output expression="&quot;La tua fascia di credito &#232; 12.&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="classe=5">
+                                                                                <then>
+                                                                                    <output expression="&quot;Hai crediti formativi?&quot;" newline="True"/>
+                                                                                    <input variable="crediti"/>
+                                                                                    <if expression="crediti=&quot;Si&quot;">
+                                                                                        <then>
+                                                                                            <output expression="&quot;La tua fascia di credito &#232; 15.&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="crediti=&quot;No&quot;">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;La tua fascia di credito &#232; 14.&quot;" newline="True"/>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <output expression="&quot;Errore&quot;" newline="True"/>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else/>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;La media non &#232; valida.&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Verrai bocciato. Ci vediamo l'anno prossimo!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

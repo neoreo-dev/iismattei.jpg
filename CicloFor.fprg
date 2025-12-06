@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-15 09:23:57 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTE1OyIwODo1MDozMyAiOzI0MDE="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTE1OyIwOToyMzo1NyAiOzI7MjUxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, N, Numero, Sum0100, Sum101200, Dispari, BiggerThan200" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="N" expression="0"/>
+            <assign variable="Numero" expression="0"/>
+            <assign variable="Sum0100" expression="0"/>
+            <assign variable="Sum101200" expression="0"/>
+            <assign variable="Dispari" expression="0"/>
+            <assign variable="BiggerThan200" expression="0"/>
+            <output expression="&quot;Quanti numeri vuoi inserire?&quot;" newline="True"/>
+            <input variable="N"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <output expression="&quot;OK! Ora inserisci il numero.&quot;" newline="True"/>
+                <input variable="Numero"/>
+                <if expression="Numero&gt;=0 &amp;&amp; Numero&lt;=100">
+                    <then>
+                        <assign variable="Sum0100" expression="Sum0100+Numero"/>
+                    </then>
+                    <else>
+                        <if expression="Numero&gt;=101 &amp;&amp; Numero&lt;=200">
+                            <then>
+                                <assign variable="Sum101200" expression="Sum101200+Numero"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;LOG: Numero non rientra in nessuna categoria, salto somma.&quot;" newline="True"/>
+                                <if expression="Numero&gt;200">
+                                    <then>
+                                        <assign variable="BiggerThan200" expression="BiggerThan200+1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="(Numero%2)&gt;0">
+                    <then>
+                        <assign variable="Dispari" expression="Dispari+1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;LOG: Il numero &#232; pari.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;La somma dei numeri compresi tra 0 e 100 &#232; &quot; &amp; Sum0100 &amp; &quot;, La somma dei numeri tra 101 e 200 &#232; &quot; &amp; Sum101200 &amp; &quot;, &quot; &amp; Dispari &amp; &quot; numeri sono dispari e &quot; &amp; BiggerThan200 &amp; &quot; numeri sono maggiori di 200.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

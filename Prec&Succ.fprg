@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 09:40:27 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTo0MDowMyAiOzIzOTM="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTo0MDoxNyAiOzE7YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTA5LTI0OyIwOToxMjoyNyAiO0VzZXJjaXppbzEtQ2lhZmFyZGluaS5mcHJnOzc1NDk="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTo0MDoyNyAiOzE7MjUwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero, Precedente, Successivo" type="Integer" array="False" size=""/>
+            <assign variable="Numero" expression="0"/>
+            <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+            <input variable="Numero"/>
+            <assign variable="Precedente" expression="Numero-1"/>
+            <assign variable="Successivo" expression="Numero+1"/>
+            <output expression="&quot;Il numero che hai scelto &#232; &quot;&amp;Numero&amp;&quot;, il suo precedente &#232; &quot;&amp;Precedente&amp;&quot;, ed il suo successivo &#232; &quot;&amp;Successivo&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-08 08:32:20 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA4OyIwODoyODoxNiAiOzI0MTA="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA4OyIwODozMjoyMCAiOzE7MjUwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, Mult" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="Mult" expression="0"/>
+            <input variable="N"/>
+            <for variable="i" start="0" end="N" direction="inc" step="1">
+                <if expression="Mult&lt;N">
+                    <then>
+                        <assign variable="Mult" expression="Mult+5"/>
+                        <output expression="Mult" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 09:34:46 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOToxMzozMiAiOzIzOTU="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozNDo0NiAiOzE7MjUxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
+            <output expression="&quot;Pensa ad un numero, scrivilo qui ed io prover&#242; ad indovinarlo&quot;" newline="True"/>
+            <input variable="numero"/>
+            <output expression="&quot;Ora raddoppia il tuo numero&quot;" newline="True"/>
+            <declare name="raddopp" type="Integer" array="False" size=""/>
+            <assign variable="raddopp" expression="numero*2"/>
+            <output expression="&quot;Ora aggiungi 12 al risultato&quot;" newline="True"/>
+            <declare name="raddopp12" type="Integer" array="False" size=""/>
+            <assign variable="raddopp12" expression="raddopp+12"/>
+            <output expression="&quot;Ora calcola la met&#224; del risultato&quot;" newline="True"/>
+            <declare name="raddopp12half" type="Integer" array="False" size=""/>
+            <assign variable="raddopp12half" expression="raddopp12/2"/>
+            <output expression="&quot;Aggiungi 2 al numero che avevi pensato&quot;" newline="True"/>
+            <declare name="numero2" type="Integer" array="False" size=""/>
+            <assign variable="numero2" expression="numero+2"/>
+            <output expression="&quot;Sottrai quel valore dal totale calcolato&quot;" newline="True"/>
+            <declare name="raddopp12halfnumero2" type="Integer" array="False" size=""/>
+            <assign variable="raddopp12halfnumero2" expression="raddopp12half-numero2"/>
+            <output expression="&quot;Ora indovino il totale: &#232; uguale a &quot; &amp; raddopp12halfnumero2 &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

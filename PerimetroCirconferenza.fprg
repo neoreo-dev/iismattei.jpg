@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 09:39:09 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozODo0MiAiOzI0MDM="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozODo1NCAiOzE7YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTA5LTI0OyIwOToxMjoyNyAiO0VzZXJjaXppbzEtQ2lhZmFyZGluaS5mcHJnOzc1NTc="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozOTowOSAiOzE7MjUxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Raggio, Perimetro, PiG" type="Real" array="False" size=""/>
+            <assign variable="PiG" expression="3.14"/>
+            <output expression="&quot;Inserisci il valore del raggio della circonferenza (la seconda forma migliore dell'universo, non puoi calcolare altre forme)&quot;" newline="True"/>
+            <input variable="Raggio"/>
+            <assign variable="Perimetro" expression="2*Raggio*PiG"/>
+            <output expression="&quot;Il perimetro della seconda forma migliore dell'universo (circonferenza) &#232;: &quot; &amp; Perimetro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

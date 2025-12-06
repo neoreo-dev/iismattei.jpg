@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-12 09:35:14 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTEyOyIwODoyNTo1MCAiOzI0MDA="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTEyOyIwOToyODo0MCAiOzE7YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTEyOyIwODoyNTo1MCAiO0luZG92aW5hTnVtZXJvMHRvMTAuZnByZzs3MzMy"/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTEyOyIwOTozNToxNCAiOzEyOzI1NjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Secret, Input, Tentativi, x" type="Integer" array="False" size=""/>
+            <assign variable="Tentativi" expression="0"/>
+            <assign variable="Input" expression="0"/>
+            <assign variable="x" expression="100"/>
+            <output expression="&quot;Inserisci un numero da 1 a 100, ed io lo prover&#242; ad indovinare!&quot;" newline="True"/>
+            <input variable="Secret"/>
+            <do expression="Input!=Secret">
+                <if expression="Input=0">
+                    <then/>
+                    <else>
+                        <output expression="Input &amp; &quot; no... riprovo!&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="Input" expression="Random(100)+1"/>
+                <assign variable="Tentativi" expression="Tentativi+1"/>
+            </do>
+            <output expression="&quot;TENTATIVI PRIMO METODO: &quot; &amp; Tentativi" newline="True"/>
+            <assign variable="Tentativi" expression="0"/>
+            <do expression="Input!=Secret">
+                <if expression="Input=0">
+                    <then/>
+                    <else>
+                        <output expression="Input &amp; &quot; no... riprovo!&quot;" newline="True"/>
+                    </else>
+                </if>
+                <if expression="Input&gt;Secret">
+                    <then>
+                        <assign variable="x" expression="Input"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="Input" expression="Random(x)+1"/>
+                <assign variable="Tentativi" expression="Tentativi+1"/>
+            </do>
+            <output expression="&quot;TENTATIVI SECONDO METODO: &quot; &amp; Tentativi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

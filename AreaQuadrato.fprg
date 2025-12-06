@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 09:38:09 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozNjozMCAiOzIzOTg="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozNzoxMyAiOzE7YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTA5LTI0OyIwOToxMjoyNyAiO0VzZXJjaXppbzEtQ2lhZmFyZGluaS5mcHJnOzc1NTE="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozODowOSAiOzE7MjUxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Lato, Area" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il valore del lato del quadrato&quot;" newline="True"/>
+            <input variable="Lato"/>
+            <assign variable="Area" expression="Lato*Lato"/>
+            <output expression="&quot;L'area del quadrato &#232;:&quot; &amp; Area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

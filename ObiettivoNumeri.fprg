@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-08 09:27:18 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA4OyIwOToyMDo0NSAiOzI0MDU="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA4OyIwOToyNzoxOCAiOzE7MjUyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Somma, NL, N" type="Integer" array="False" size=""/>
+            <assign variable="Somma" expression="0"/>
+            <assign variable="NL" expression="0"/>
+            <assign variable="N" expression="0"/>
+            <output expression="&quot;Inserisci il tuo obiettivo&quot;" newline="True"/>
+            <input variable="NL"/>
+            <while expression="Somma&lt;NL">
+                <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+                <input variable="N"/>
+                <assign variable="Somma" expression="Somma+N"/>
+            </while>
+            <output expression="&quot;Hai raggiunto il tuo obiettivo di &quot; &amp; NL &amp; &quot;!&quot; &amp; &quot; la somma da te raggiunta &#232; di &quot; &amp; Somma &amp; &quot; e superi di &quot; &amp; Somma-NL &amp; &quot; l'obiettivo da te impostato.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

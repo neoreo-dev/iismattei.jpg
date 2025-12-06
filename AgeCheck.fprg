@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-02 11:50:58 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAyOyIxMDoxNDo1OCAiOzIzOTc="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAyOyIxMTo1MDo1OCAiOzI7MjUwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu" type="String" array="False" size=""/>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <assign variable="age" expression="69"/>
+            <assign variable="menu" expression="&quot;&quot;"/>
+            <if expression="menu=&quot;Senato&quot;">
+                <then>
+                    <output expression="&quot;Inserisci la tua et&#224; per controllare se puoi votare&quot;" newline="True"/>
+                    <input variable="age"/>
+                    <if expression="age&gt;=18">
+                        <then>
+                            <output expression="&quot;Sei maggiorenne. &quot;" newline="False"/>
+                            <if expression="age&gt;=25">
+                                <then>
+                                    <output expression="&quot;Puoi votare alla Camera e al Senato.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Puoi votare solo alla Camera.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sei minorenne, non puoi votare.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;skibidiboppi&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

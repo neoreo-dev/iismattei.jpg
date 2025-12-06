@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-12 08:54:55 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTEyOyIwODozMzo1MiAiOzI0MDE="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTEyOyIwODo1NDo1NSAiOzI7MjUxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Somma, N" type="Integer" array="False" size=""/>
+            <assign variable="Somma" expression="0"/>
+            <assign variable="N" expression="0"/>
+            <do expression="N&gt;0">
+                <assign variable="Somma" expression="Somma+N"/>
+                <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+                <input variable="N"/>
+            </do>
+            <output expression="&quot;La somma dei numeri da te inseriti &#232;: &quot; &amp; Somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

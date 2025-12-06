@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 09:39:59 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozOTozNiAiOzI0MDc="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozOTo1MSAiOzE7YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTA5LTI0OyIwOToxMjoyNyAiO0VzZXJjaXppbzEtQ2lhZmFyZGluaS5mcHJnOzc1NTU="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTAxOyIwOTozOTo1OSAiOzE7MjUyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1, Num2, Num3, Sum, Average" type="Real" array="False" size=""/>
+            <assign variable="Num1" expression="0"/>
+            <assign variable="Num2" expression="0"/>
+            <assign variable="Num3" expression="0"/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;Inserisci il terzo numero&quot;" newline="True"/>
+            <input variable="Num3"/>
+            <assign variable="Sum" expression="Num1+Num2+Num3"/>
+            <assign variable="Average" expression="Sum/3"/>
+            <output expression="&quot;La somma dei tre numeri &#232; &quot;&amp;Sum&amp;&quot;,mentre la loro media &#232; &quot;&amp;Average" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-08 09:10:17 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA4OyIwODo1NjoyNSAiOzI0MTE="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA4OyIwOToxMDoxNyAiOzE7MjUxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, Min, Max, Media, i" type="Real" array="False" size=""/>
+            <declare name="First" type="Boolean" array="False" size=""/>
+            <assign variable="First" expression="false"/>
+            <assign variable="N" expression="0"/>
+            <assign variable="Min" expression="0"/>
+            <assign variable="Max" expression="0"/>
+            <assign variable="Media" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="0" end="5" direction="inc" step="1">
+                <if expression="First=false">
+                    <then>
+                        <assign variable="First" expression="true"/>
+                        <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+                        <input variable="N"/>
+                        <assign variable="Min" expression="N"/>
+                        <assign variable="Max" expression="N"/>
+                        <assign variable="Media" expression="N"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+                        <input variable="N"/>
+                        <if expression="N&gt;Max">
+                            <then>
+                                <assign variable="Max" expression="N"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="N&lt;Min">
+                            <then>
+                                <assign variable="Min" expression="N"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="Media" expression="Media+N"/>
+                    </else>
+                </if>
+            </for>
+            <assign variable="Media" expression="Media/5"/>
+            <output expression="&quot;Il numero pi&#249; piccolo &#232; &quot; &amp; Min &amp; &quot;, il numero pi&#249; grande &#232; &quot; &amp; Max &amp; &quot;, e la media totale &#232; &quot; &amp; Media &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

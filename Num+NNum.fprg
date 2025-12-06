@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-11 09:37:39 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTExOyIwOTowODoxNSAiOzI0MDE="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTEwLTExOyIwOTozNzozOSAiOzE7MjUxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero, Somma, SumSum" type="Integer" array="False" size=""/>
+            <assign variable="Numero" expression="0"/>
+            <assign variable="SumSum" expression="0"/>
+            <assign variable="Somma" expression="0"/>
+            <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+            <input variable="Numero"/>
+            <while expression="Numero&gt;=0">
+                <assign variable="SumSum" expression="SumSum+Numero"/>
+                <assign variable="Numero" expression="Numero-1"/>
+            </while>
+            <output expression="SumSum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

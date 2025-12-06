@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-26 08:30:51 AM"/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTI2OzA4OjI1OjQyIEFNOzI0ODA="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTI2OzA4OjMwOjUxIEFNOzM7MjU4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <output expression="&quot;Inserisci un numero&quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num MOD 2 = 0">
+                <then>
+                    <output expression="&quot;Il numero da te inserito, &quot; &amp; num &amp; &quot;, &#232; pari&quot;" newline="False"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero da te inserito, &quot; &amp; num &amp; &quot;, &#232; dispari&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

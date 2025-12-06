@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alunno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-05 08:50:29 "/>
+        <attribute name="created" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA1OyIwODoyNDo1NCAiOzI0MDU="/>
+        <attribute name="edited" value="YWx1bm5vO0xBQjAyUEMxOTsyMDI1LTExLTA1OyIwODo1MDoyOSAiOzE7MjUxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="status3, status5, status7, tabcounter" type="Integer" array="False" size=""/>
+            <declare name="ciclo" type="String" array="False" size=""/>
+            <assign variable="status3" expression="0"/>
+            <assign variable="status5" expression="0"/>
+            <assign variable="status7" expression="0"/>
+            <assign variable="tabcounter" expression="0"/>
+            <assign variable="ciclo" expression="&quot;&quot;"/>
+            <output expression="&quot;Scegli che ciclo utilizzare: do, while o for&quot;" newline="True"/>
+            <input variable="ciclo"/>
+            <if expression="ciclo=&quot;do&quot;">
+                <then>
+                    <output expression="&quot;Tabellina del 3 con ciclo do&quot;" newline="True"/>
+                    <do expression="status3 != 30">
+                        <assign variable="tabcounter" expression="tabcounter+1"/>
+                        <assign variable="status3" expression="3 * tabcounter"/>
+                        <output expression="status3" newline="True"/>
+                    </do>
+                    <output expression="&quot;Tabellina del 5 con ciclo do&quot;" newline="True"/>
+                    <assign variable="tabcounter" expression="0"/>
+                    <do expression="status5 != 50">
+                        <assign variable="tabcounter" expression="tabcounter+1"/>
+                        <assign variable="status5" expression="5 * tabcounter"/>
+                        <output expression="status5" newline="True"/>
+                    </do>
+                    <output expression="&quot;Tabellina del 7 con ciclo do&quot;" newline="True"/>
+                    <assign variable="tabcounter" expression="0"/>
+                    <do expression="status7 != 70">
+                        <assign variable="tabcounter" expression="tabcounter+1"/>
+                        <assign variable="status7" expression="7 * tabcounter"/>
+                        <output expression="status7" newline="True"/>
+                    </do>
+                </then>
+                <else>
+                    <if expression="ciclo=&quot;while&quot;">
+                        <then>
+                            <output expression="&quot;Tabellina del 3 con ciclo while&quot;" newline="True"/>
+                            <while expression="status3 != 30">
+                                <assign variable="tabcounter" expression="tabcounter+1"/>
+                                <assign variable="status3" expression="3 * tabcounter"/>
+                                <output expression="status3" newline="True"/>
+                            </while>
+                            <output expression="&quot;Tabellina del 5 con ciclo while&quot;" newline="True"/>
+                            <assign variable="tabcounter" expression="0"/>
+                            <while expression="status5 != 50">
+                                <assign variable="tabcounter" expression="tabcounter+1"/>
+                                <assign variable="status5" expression="5 * tabcounter"/>
+                                <output expression="status5" newline="True"/>
+                            </while>
+                            <output expression="&quot;Tabellina del 7 con ciclo while&quot;" newline="True"/>
+                            <assign variable="tabcounter" expression="0"/>
+                            <while expression="status7 != 70">
+                                <assign variable="tabcounter" expression="tabcounter+1"/>
+                                <assign variable="status7" expression="7 * tabcounter"/>
+                                <output expression="status7" newline="True"/>
+                            </while>
+                        </then>
+                        <else>
+                            <if expression="ciclo=&quot;for&quot;">
+                                <then>
+                                    <output expression="&quot;Tabellina del 3 con ciclo for&quot;" newline="True"/>
+                                    <for variable="tabcounter" start="1" end="10" direction="inc" step="1">
+                                        <assign variable="status3" expression="3 * tabcounter"/>
+                                        <output expression="status3" newline="True"/>
+                                    </for>
+                                    <output expression="&quot;Tabellina del 5 con ciclo for&quot;" newline="True"/>
+                                    <assign variable="tabcounter" expression="0"/>
+                                    <for variable="tabcounter" start="1" end="10" direction="inc" step="1">
+                                        <assign variable="status5" expression="5 * tabcounter"/>
+                                        <output expression="status5" newline="True"/>
+                                    </for>
+                                    <output expression="&quot;Tabellina del 7 con ciclo for&quot;" newline="False"/>
+                                    <assign variable="tabcounter" expression="0"/>
+                                    <for variable="tabcounter" start="1" end="10" direction="inc" step="1">
+                                        <assign variable="status7" expression="7 * tabcounter"/>
+                                        <output expression="status7" newline="True"/>
+                                    </for>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Opzione non valida&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
