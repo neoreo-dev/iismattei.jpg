@@ -6,11 +6,16 @@
 using namespace std;
 
 int main() {
-    //dichiarazione array e variabili
-    float n, somma, media, numeri[100];
+    //dichiarazione ed inizializzazione array e variabili
+    int n;
+    float somma, media;
+    n=0;
+    somma=0;
+    media=0;
 
     cout<<"Quanti elementi vuoi inserire nell'array?"<<endl;
     cin>>n;
+    float numeri[n];
 
     //ciclo per inserire elementi
     for (int i=0; i<n; i++) {
