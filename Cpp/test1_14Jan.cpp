@@ -8,10 +8,7 @@ using namespace std;
 int main() {
     //dichiarazione ed inizializzazione array e variabili
     int n;
-    float somma, media;
-    n=0;
-    somma=0;
-    media=0;
+    float somma, media, distanza = 0;
 
     cout<<"Quanti elementi vuoi inserire nell'array?"<<endl;
     cin>>n;
@@ -31,6 +28,12 @@ int main() {
     media=somma/n;
 
     cout<<"La somma dei valori nel tuo array è di "<<somma<<", mentre la media dei valori è "<<media<<endl;
+
+    for (int i=0; i<n; i++) {
+        distanza=media-numeri[i];
+
+        cout<<"Il "<<i+1<<"o numero si discosta di "<<abs(distanza)<<" dalla media"<<endl;
+    }
     
     return 0;
 }
