@@ -42,6 +42,7 @@ int main() {
             //cout<<"DEBUG - Valore: "<<temp<<endl;
             temp=array[n/2-(i+1)];
             cout<<"Valore NON uguale trovato ("<<temp<<")"<<endl;
+            break;
         }
         temp=0;
     }
@@ -58,4 +59,5 @@ int main() {
     }
     
     return 0;
+
 }
